@@ -1,29 +1,29 @@
- <h1 align="center"> Integer to Roman Numeral conversion </h1>
+<h1 align="center"> Integer to Roman Numeral conversion </h1>
 
-  <div id="url-addition">
-    <%= form_tag convert_path, method: :get,  id: "conversion-form" do %>
-      <div class="form-group">
-        <%= text_field_tag :integer_input, params[:integer_input],
-                           placeholder: "Enter the integer you'd like to convert to Roman numeral", autofocus: true,
-                           class: "form-control input-lg" %>
-        <small id="integerInput" class="form-text text-muted">Integer must be between 1 and 99999
-        </small>
-        <%= button_tag(type: :submit, class: "btn btn-primary") do %>
-          Convert
-        <% end %>
+<div id="url-addition">
+  <%= form_tag convert_path, method: :get, id: "conversion-form" do %>
+    <div class="form-group">
+      <%= text_field_tag :integer_input, params[:integer_input],
+                         placeholder: "Enter the integer you'd like to convert to Roman numeral", autofocus: true,
+                         class: "form-control input-lg" %>
+      <small id="integerInput" class="form-text text-muted">Integer must be between 1 and 99999
+      </small>
+      <%= button_tag(type: :submit, class: "btn btn-primary") do %>
+        Convert
+      <% end %>
 
-      </div>
-    <% end %>
-  </div>
-  <%= render 'error' %>
-
-  <% unless @roman_numeral.nil? %>
-    <div class="card result" align="center">
-      <div class="card-body">
-        The roman numeral equivalent of <%= params[:integer_input] %> is <b><%= @roman_numeral%></b>
-      </div>
     </div>
   <% end %>
+</div>
+<%= render 'error' %>
+
+<% unless @roman_numeral.nil? %>
+  <div class="card result" align="center">
+    <div class="card-body">
+      The roman numeral equivalent of <%= params[:integer_input] %> is <b><%= @roman_numeral %></b>
+    </div>
+  </div>
+<% end %>
 
 
 
