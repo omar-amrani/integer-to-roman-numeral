@@ -1,6 +1,6 @@
 # README
 
-This is a small app that takes an integer as input and returns the equivalent roman numeral
+This is a small rails app that takes an integer as input and returns the equivalent roman numeral
 
 Requirements:
 
