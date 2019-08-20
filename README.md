@@ -4,7 +4,7 @@ This is a small rails app that takes an integer as input and returns the equival
 
 _**Assumptions**_
 
-* This app is using the traditional roman numeral model. More information can be found in [here](https://www.mathsisfun.com/roman-numerals.html)
+* This app is using the traditional roman numeral model. More information can be found [here](https://www.mathsisfun.com/roman-numerals.html)
 
 * The highest roman symbol used is M ([Vinculum system](https://en.wikipedia.org/wiki/Roman_numerals#Vinculum) is not supported)
 
